@@ -6,13 +6,13 @@ import { Header } from "@/components/landingpage/header";
 import { createClient } from "@/utils/supabase/server";
 import { Provider } from "@/components/Provider";
 import { Toaster } from "@/components/ui/sonner";
-import { Footer } from "@/components/landingpage/Footer";
+import { Footer } from "@/components/landingpage/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "",
-  description: "",
+  title: "Boring Landing Page",
+  description: "A landing page for a boring person",
 };
 
 export default async function RootLayout({
@@ -28,7 +28,7 @@ export default async function RootLayout({
   return (
     <html lang="en">
       <head>
-        <script
+        {/* <script
           defer
           src="https://cloud.umami.is/script.js"
           data-website-id="8aa1afc7-b3eb-460c-ab50-fd386289cdaa"
@@ -37,7 +37,7 @@ export default async function RootLayout({
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2706727138311810"
           crossOrigin="anonymous"
-        />
+        /> */}
       </head>
       <body className={`h-full ${inter.className}`}>
         <Provider>
